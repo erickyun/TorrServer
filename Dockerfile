@@ -59,6 +59,7 @@ COPY ./accs.sh /accs.sh
 RUN chmod +x /accs.sh
 
 RUN apk add --no-cache --update ffmpeg
+RUN apk add --no-cache --update curl
 
 CMD /accs.sh && /docker-entrypoint.sh
 ### BUILD MAIN IMAGE end ###
