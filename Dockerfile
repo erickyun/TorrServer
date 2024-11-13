@@ -56,6 +56,7 @@ ENV GODEBUG=madvdontneed=1
 COPY --from=compressed ./torrserver /usr/bin/torrserver
 COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 COPY ./accs.sh /accs.sh
+RUN chmod +x /accs.sh
 
 RUN apk add --no-cache --update ffmpeg
 
