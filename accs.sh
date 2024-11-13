@@ -1,3 +1,3 @@
 #!/bin/sh
 
-curl -OL $ACCS
+curl -o /opt/ts/data/accs.db -L $ACCS
